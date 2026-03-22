@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caio Fernando Gouveia Carvalho - Clube de Regatas do Flamengo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #dc143c;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            background-color: #000;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav a:focus {
+            outline: 2px solid yellow;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1rem;
+        }
+        section {
+            flex: 2;
+            margin-right: 1rem;
+        }
+        aside {
+            flex: 1;
+            background-color: #fff;
+            padding: 1rem;
+            border: 1px solid #ccc;
+        }
+        form {
+            background-color: #fff;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input:focus, textarea:focus, select:focus {
+            outline: 2px solid #dc143c;
+        }
+        button {
+            background-color: #dc143c;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:focus {
+            outline: 2px solid yellow;
+        }
+        img, video, audio {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            section {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Clube de Regatas do Flamengo</h1>
+        <p>O Mais Querido do Brasil - Fundado em 1895</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#historia">História</a></li>
+            <li><a href="#titulos">Títulos</a></li>
+            <li><a href="#elenco">Elenco</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="noticias">
+            <h2>Últimas Notícias do Mengão</h2>
+            
+            <article>
+                <h3>Título da Notícia: Preparação no Ninho do Urubu</h3>
+                <p>O elenco rubro-negro finalizou hoje os treinamentos táticos focados no próximo clássico. O técnico destacou a importância da posse de bola.</p>
+                <time datetime="2026-03-09">9 de março de 2026</time>
+            </article>
+
+            <article>
+                <h3>Título da Notícia: Renovação de Contrato</h3>
+                <p>A diretoria anunciou a renovação de contrato de uma das promessas da base, garantindo o futuro do clube nas próximas temporadas.</p>
+                <time datetime="2026-03-08">8 de março de 2026</time>
+            </article>
+        </section>
+
+        <section id="midia">
+            <h2>Mídia do Clube</h2>
+            <img src="aula3.09.03.26.png" alt="Imagem do Clube de Regatas do Flamengo" tabindex="0">
+            <video controls tabindex="0">
+                <source src="video-flamengo.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+            <audio controls tabindex="0">
+                <source src="hino-flamengo.mp3" type="audio/mpeg">
+                Seu navegador não suporta áudio.
+            </audio>
+        </section>
+
+        <section id="formulario">
+            <h2>Contato e Cadastro de Fã</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required tabindex="1">
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required tabindex="2">
+
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" min="1" max="120" required tabindex="3">
+
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado" required tabindex="4">
+                        <option value="">Selecione</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <!-- Adicionar mais estados se necessário -->
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Mensagem</legend>
+                    <label for="mensagem">Sua Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required tabindex="5"></textarea>
+                </fieldset>
+
+                <button type="submit" tabindex="6">Enviar</button>
+            </form>
+        </section>
+
+        <aside>
+            <h2>Informações Rápidas</h2>
+            <p><strong>Mascote:</strong> Urubu</p>
+            <p><strong>Cores Oficiais:</strong> Vermelho e Preto</p>
+            <p><strong>Estádio:</strong> Maracanã </p>
+            
+            <h3>Principais Conquistas</h3>
+            <ul>
+                <li>Intercontinental (1981)</li>
+                <li>Libertadores (3)</li>
+                <li>Brasileirão (8)</li>
+                <li>Cariocas (40)</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Página de Fã do Flamengo.</p>
+    </footer>
+
+</body>
+</html>
